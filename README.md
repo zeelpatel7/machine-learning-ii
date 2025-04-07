@@ -18,3 +18,27 @@ c. Regression techniques:
 
 d. Model evaluation using Mean Squared Error (MSE)  
 e. Coefficient path visualization to interpret how models respond to different alpha values
+
+## 2. Predict water temperature using scikit-learn regression (gradient descent)
+
+This assignment implements Mini-Batch Gradient Descent to predict water temperature (`T_degC`) using oceanographic features from the `bottle.csv` dataset. It compares performance across different mini-batch sizes and evaluates convergence behavior and generalization capability using key regression metrics.
+
+### Key Concepts:
+
+a. Data cleaning and feature selection for regression modeling  
+b. Feature scaling to improve convergence during gradient descent  
+c. Parameter estimation using:
+- Mini-Batch Gradient Descent (batch sizes: 50, 250, 2000)  
+- Comparison with Ordinary Least Squares (scikit-learn’s Linear Regression)
+
+d. Model evaluation using:
+- Mean Squared Error (MSE)  
+- R-squared (R²)  
+- Explained Variance Score  
+
+e. Visualization techniques:
+- Cost vs. Epoch plots for each batch size  
+- Actual vs. Predicted scatterplots across batch sizes  
+- Overlaid comparison of prediction quality for all batch sizes  
+
+f. Interpretation of learning rate role, comparison with normal equation, and understanding early stopping and overfitting detection
